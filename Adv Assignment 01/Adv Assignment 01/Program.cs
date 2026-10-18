@@ -36,7 +36,7 @@ internal class Program
 
         #region Q04
         //Q4: What is a generic method? Write Swap<T> method.
-        //A generic method is a method that uses a type parameter, allowing it to work with different data types.
+        
         //int A = 20, B = 10;
         //Swap<int>(ref A, ref B);
         //Console.WriteLine(A);
@@ -45,9 +45,16 @@ internal class Program
 
         #region Q05
         //Q5: Write a generic method FindMax<T> that finds maximum value
-        string[] arr = { "ali"  ,"peter", "omer"};
-        Console.WriteLine(FindMax<string>(arr));
+        //string[] arr = { "ali"  ,"peter", "omer"};
+        //Console.WriteLine(FindMax<string>(arr));
 
+        #endregion
+
+        #region Q06
+        //Q6: What is a generic interface? Write IRepository<T>. 
+        //A generic interface is a interface that uses a type parameter, allowing it to work with different data types.
+
+        IRepository<int> repository;
         #endregion
     }
 

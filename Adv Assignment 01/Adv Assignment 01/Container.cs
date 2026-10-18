@@ -1,6 +1,6 @@
 ﻿namespace Adv_Assignment_01;
 
-internal class Container <T>
+internal class Container<T>
 {
     private T item;
 
