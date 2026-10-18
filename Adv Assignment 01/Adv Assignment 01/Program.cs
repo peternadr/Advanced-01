@@ -11,5 +11,19 @@ internal class Program
         To Avoid creating separate classes for each data type.
         */
         #endregion
+
+        #region Q02
+        //Q2: Write a generic class Container<T> with Add and Get methods.
+
+        Container<int> container = new Container<int>();
+        container.Add(10);
+        Console.WriteLine(container.Get()); 
+
+        Container<string> container1 = new Container<string>();
+        container1.Add("peter");     
+        Console.WriteLine(container1.Get());
+
+
+        #endregion
     }
 }
