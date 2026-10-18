@@ -61,9 +61,18 @@ internal class Program
         //Q7: What is the 'struct' constraint? Write an example.
         //The struct constraint in C# generics ensures that the type argument must be a non-nullable value type
 
-        Container<int> c1 = new Container<int>();       // Valid
-        Container<double> c2 = new Container<double>(); // Valid
+        //Container<int> c1 = new Container<int>();       // Valid
+        //Container<double> c2 = new Container<double>(); // Valid
         // Container<string> c3 = new Container<string>(); // Error
+        #endregion
+
+        #region Q08
+        //Q8: What is the 'class' constraint? Write an example.
+        //The cladd constraint in C# generics ensures that the type argument must be a reference type
+
+        Container<string> c3 = new Container<string>(); // valid
+        Container<int[]> c2 = new Container<int[]>(); // Valid
+        //Container<int> c1 = new Container<int>(); // Error
         #endregion
     }
 

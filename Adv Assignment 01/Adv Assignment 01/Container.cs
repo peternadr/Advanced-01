@@ -1,6 +1,6 @@
 ﻿namespace Adv_Assignment_01;
 
-internal class Container<T> where T : struct
+internal class Container<T> where T : class
 {
     private T item;
 
