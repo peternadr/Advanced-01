@@ -30,8 +30,24 @@ internal class Program
         //Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
         // A multitype parameter means a generic class or method can accept more than one type parameter
 
-        Pair<int, string> pair = new Pair<int, string>(20, "peter");
+        //Pair<int, string> pair = new Pair<int, string>(20, "peter");
 
         #endregion
+
+        #region Q04
+        //Q4: What is a generic method? Write Swap<T> method.
+        //A generic method is a method that uses a type parameter, allowing it to work with different data types.
+        int A = 20, B = 10;
+        Swap<int>(ref A, ref B);
+        Console.WriteLine(A);
+        Console.WriteLine(B);
+        #endregion
+    }
+
+    public static void Swap<T>(ref T A, ref T B)
+    {
+        T temp = A;
+        A = B;
+        B = temp;
     }
 }
