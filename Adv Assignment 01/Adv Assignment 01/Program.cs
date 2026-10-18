@@ -15,14 +15,22 @@ internal class Program
         #region Q02
         //Q2: Write a generic class Container<T> with Add and Get methods.
 
-        Container<int> container = new Container<int>();
-        container.Add(10);
-        Console.WriteLine(container.Get()); 
+        //Container<int> container = new Container<int>();
+        //container.Add(10);
+        //Console.WriteLine(container.Get()); 
 
-        Container<string> container1 = new Container<string>();
-        container1.Add("peter");     
-        Console.WriteLine(container1.Get());
+        //Container<string> container1 = new Container<string>();
+        //container1.Add("peter");     
+        //Console.WriteLine(container1.Get());
 
+
+        #endregion
+
+        #region Q03
+        //Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
+        // A multitype parameter means a generic class or method can accept more than one type parameter
+
+        Pair<int, string> pair = new Pair<int, string>(20, "peter");
 
         #endregion
     }
