@@ -70,9 +70,17 @@ internal class Program
         //Q8: What is the 'class' constraint? Write an example.
         //The cladd constraint in C# generics ensures that the type argument must be a reference type
 
-        Container<string> c3 = new Container<string>(); // valid
-        Container<int[]> c2 = new Container<int[]>(); // Valid
+        //Container<string> c3 = new Container<string>(); // valid
+        //Container<int[]> c2 = new Container<int[]>(); // Valid
         //Container<int> c1 = new Container<int>(); // Error
+        #endregion
+
+        #region Q09
+        //Q9: What is the 'new()' constraint? Write an example.
+        //The new() constraint in C# generics ensures that the type parameter has a public parameterless constructor
+
+
+        Container<Pair<int, int>> container;
         #endregion
     }
 

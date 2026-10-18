@@ -1,6 +1,6 @@
 ﻿namespace Adv_Assignment_01;
 
-internal class Container<T> where T : class
+internal class Container<T> where T : new()
 {
     private T item;
 

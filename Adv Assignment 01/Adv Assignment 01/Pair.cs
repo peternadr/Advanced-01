@@ -10,4 +10,8 @@ internal class Pair <TKey, TValue>
             Key = key;
             Value = value;
         }
+
+    public Pair()
+    {
     }
+}
