@@ -36,7 +36,7 @@ internal class Program
 
         #region Q04
         //Q4: What is a generic method? Write Swap<T> method.
-        
+
         //int A = 20, B = 10;
         //Swap<int>(ref A, ref B);
         //Console.WriteLine(A);
@@ -54,7 +54,16 @@ internal class Program
         //Q6: What is a generic interface? Write IRepository<T>. 
         //A generic interface is a interface that uses a type parameter, allowing it to work with different data types.
 
-        IRepository<int> repository;
+        //IRepository<int> repository;
+        #endregion
+
+        #region Q07
+        //Q7: What is the 'struct' constraint? Write an example.
+        //The struct constraint in C# generics ensures that the type argument must be a non-nullable value type
+
+        Container<int> c1 = new Container<int>();       // Valid
+        Container<double> c2 = new Container<double>(); // Valid
+        // Container<string> c3 = new Container<string>(); // Error
         #endregion
     }
 
