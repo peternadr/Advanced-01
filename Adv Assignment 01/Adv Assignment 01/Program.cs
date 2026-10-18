@@ -80,7 +80,15 @@ internal class Program
         //The new() constraint in C# generics ensures that the type parameter has a public parameterless constructor
 
 
-        Container<Pair<int, int>> container;
+        //Container<Pair<int, int>> container;
+        #endregion
+
+        #region Q10
+        //Q10:  What is the interface constraint? Write an example.
+        //A interface constraint in C# generics ensures that the type parameter T implements a specific interface
+
+        Container<int> container; // valid
+        //Container<int[]> container1; // error
         #endregion
     }
 
