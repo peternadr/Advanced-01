@@ -37,10 +37,17 @@ internal class Program
         #region Q04
         //Q4: What is a generic method? Write Swap<T> method.
         //A generic method is a method that uses a type parameter, allowing it to work with different data types.
-        int A = 20, B = 10;
-        Swap<int>(ref A, ref B);
-        Console.WriteLine(A);
-        Console.WriteLine(B);
+        //int A = 20, B = 10;
+        //Swap<int>(ref A, ref B);
+        //Console.WriteLine(A);
+        //Console.WriteLine(B);
+        #endregion
+
+        #region Q05
+        //Q5: Write a generic method FindMax<T> that finds maximum value
+        string[] arr = { "ali"  ,"peter", "omer"};
+        Console.WriteLine(FindMax<string>(arr));
+
         #endregion
     }
 
@@ -49,5 +56,18 @@ internal class Program
         T temp = A;
         A = B;
         B = temp;
+    }
+
+    public static T FindMax<T>(T[]arr) where T : IComparable<T>
+    {
+        T max = arr[0];
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i].CompareTo(max) > 0)
+            {
+                max = arr[i];
+            }
+        }
+        return max;
     }
 }
