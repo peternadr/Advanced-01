@@ -156,7 +156,10 @@ internal class Program
 
         #endregion
 
-
+        #region Q19
+        //Q19: How can you inherit from a generic class?
+        //a class can inherit from a generic class by specifying the type argument for the generic base class
+        #endregion
 
     }
 
