@@ -141,6 +141,16 @@ internal class Program
 
         #endregion
 
+        #region Q17
+        //Q17: What is the difference between covariance and contravariance?
+        /*covariance :- Allows a more derived type to be used , Used mainly for output (return values)
+         contravariance :- Allows a less derived type to be used , Used mainly for input (method parameters)
+         */
+
+
+        #endregion
+
+
 
     }
 
