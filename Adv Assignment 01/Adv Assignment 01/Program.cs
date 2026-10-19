@@ -110,6 +110,14 @@ internal class Program
 
         #endregion
 
+        #region Q13
+        //Q13: What does the 'default' keyword do in generics?
+        // default keyword in generics returns the defualt value of a type
+
+
+
+        #endregion
+
     }
 
     public static void Swap<T>(ref T A, ref T B)
