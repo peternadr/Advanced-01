@@ -97,8 +97,17 @@ internal class Program
         //Q11: What is the base class constraint? Write an example.
         // A base class constraint in C# generics ensures that the type parameter T must be the specified base class or a class derived from it
 
-        Birds<Eagle> eagle; // valid
+        //Birds<Eagle> eagle; // valid
         //Birds<Pingouin> pingouin; // error
+        #endregion
+
+        #region Q12
+        //Q12: How do you apply multiple constraints? Write an example. 
+        //we can apply multiple constraints to a generic type parameter using the where keyword followed by the required constraints
+
+
+
+
         #endregion
 
     }
