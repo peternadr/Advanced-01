@@ -120,9 +120,17 @@ internal class Program
 
         #region Q14
         //Q14: Write a SafeList<T> that returns default when the index is invalid.
-        int[] items = { 1, 12 , 5};
-        Console.WriteLine(GetSafeList(items, 1));
-        Console.WriteLine(GetSafeList(items, 3));
+        //int[] items = { 1, 12 , 5};
+        //Console.WriteLine(GetSafeList(items, 1));
+        //Console.WriteLine(GetSafeList(items, 3));
+        #endregion
+
+        #region Q15
+        //Q15: What is covariance? Explain the 'out' keyword.
+        //Covariance allows a generic interface to use a more derived type than the type originally specified. The out keyword enables covariance
+
+
+
         #endregion
 
     }
