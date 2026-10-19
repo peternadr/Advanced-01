@@ -133,6 +133,15 @@ internal class Program
 
         #endregion
 
+        #region Q16
+        //Q16: What is contravariance? Explain the 'in' keyword.
+        //Contravariance allows a generic interface to use a less derived type than the type originally specified. The in keyword enables contravariance
+
+
+
+        #endregion
+
+
     }
 
     public static void Swap<T>(ref T A, ref T B)
