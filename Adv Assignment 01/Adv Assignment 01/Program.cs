@@ -150,6 +150,12 @@ internal class Program
 
         #endregion
 
+        #region Q18
+        //Q18: How do static members work in generic types?
+        //static members in a generic class are shared among instances of the same generic type, but each different type argument has its own separate static members
+
+        #endregion
+
 
 
     }
