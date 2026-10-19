@@ -118,6 +118,13 @@ internal class Program
 
         #endregion
 
+        #region Q14
+        //Q14: Write a SafeList<T> that returns default when the index is invalid.
+        int[] items = { 1, 12 , 5};
+        Console.WriteLine(GetSafeList(items, 1));
+        Console.WriteLine(GetSafeList(items, 3));
+        #endregion
+
     }
 
     public static void Swap<T>(ref T A, ref T B)
@@ -127,7 +134,7 @@ internal class Program
         B = temp;
     }
 
-    public static T FindMax<T>(T[]arr) where T : IComparable<T>
+    public static T FindMax<T>(T[] arr) where T : IComparable<T>
     {
         T max = arr[0];
         for (int i = 1; i < arr.Length; i++)
@@ -138,5 +145,14 @@ internal class Program
             }
         }
         return max;
+    }
+
+    public static T GetSafeList<T>(T[] items, int index)
+    {
+        if (index < 0 || index >= items.Length)
+        {
+            return default;
+        }
+        return items[index];
     }
 }
