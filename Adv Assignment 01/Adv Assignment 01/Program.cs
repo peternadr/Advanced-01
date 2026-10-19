@@ -1,4 +1,6 @@
-﻿namespace Adv_Assignment_01;
+﻿using Adv_Assignment_01.BaseClass;
+
+namespace Adv_Assignment_01;
 
 internal class Program
 {
@@ -87,9 +89,18 @@ internal class Program
         //Q10:  What is the interface constraint? Write an example.
         //A interface constraint in C# generics ensures that the type parameter T implements a specific interface
 
-        Container<int> container; // valid
+        //Container<int> container; // valid
         //Container<int[]> container1; // error
         #endregion
+
+        #region Q11
+        //Q11: What is the base class constraint? Write an example.
+        // A base class constraint in C# generics ensures that the type parameter T must be the specified base class or a class derived from it
+
+        Birds<Eagle> eagle; // valid
+        //Birds<Pingouin> pingouin; // error
+        #endregion
+
     }
 
     public static void Swap<T>(ref T A, ref T B)
